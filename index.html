@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/34ef6475c2.js"
+      crossorigin="anonymous"
+    >
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+  <div class="container-background">
+    <div class="container body col-6">
+      <div class="card-body">
+       <h1 class="heading">Weather Forecast</h1>
+       
+       <form id="search-form">
+          <div class="row">
+            <div class="col 10">
+              <button type="text" id="location" class="btn location btn-outline-info arrow">
+                <span class="fas fa-location-arrow"></span>
+              </button>
+            </div>
+            <div class="form-group col-9">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Type the city"
+                autocomplete="off"
+                id="city-input"
+              />
+            </div>
+            <button type="submit" class="btn btn-outline-info search col-xs mb-3" id="submit">
+              <span class="fas fa-search"></span>
+            </button>
+          </div>
+        </form>
+
+        <div class="card-body col-lg prague">
+          <div class="row location">
+            <div class="col-lg">
+              <div class="inner-card text-center"><span class="fill-city" id="city">Prague</span><span id="temperature">  10</span> <a href="#" class = "unit" id="celsius-link"> °C</a> |<span class="farenheit text-center"><a href="#" class = "unit" id="farenheit-link"> °F</a></span></div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col feels-like">
+              <h4>Feels like <span id="feels_like">11</span>°C</h4>
+              <h5 class="date" id="date-time"></h5>
+            </div>
+            <div class="col icon">
+              <div class="main-icon col-lg"
+                ><span class="far fa-snowflake text-center"></span
+              ></div>
+            </div>
+          </div>
+          <hr />
+          <p class="weather-details">
+            Conditions: <span id="description"> Sunny </span> <br />
+            Wind: <span id="wind">5</span>Km/h<br />
+            Pressure: <span id="pressure">1013</span> hPa
+          </p>
+        </div>
+        <br />
+
+
+        <div class="row tuesday day justify-content-md-center">
+          <div class="col-4">
+            Tuesday
+          </div>
+          <div class="col">
+            <span class="fas fa-cloud-sun forecast-icon text-center"></span>
+          </div>
+          <div class="col temp text-center">-5°C | <strong>-7°C</strong></div>
+        </div>
+        <br />
+        <div class="row wednesday day">
+          <div class="col-4">
+            Wednesday
+          </div>
+          <div class="col">
+            <span class="fas fa-sun forecast-icon text-center"></span>
+          </div>
+          <div class="col temp text-center">-2°C | <strong>-3°C</strong></div>
+        </div>
+        <br />
+        <div class="row thursday day">
+          <div class="col-4">
+            Thursday
+          </div>
+          <div class="col">
+            <span class="fas fa-wind forecast-icon text-center"></span>
+          </div>
+          <div class="col temp text-center">0°C | <strong>-1°C</strong></div>
+        </div>
+        <br />
+        <div class="row friday day">
+          <div class="col-4">
+            Friday
+          </div>
+          <div class="col">
+            <span class="fas fa-cloud-sun-rain forecast-icon text-center"></span>
+          </div>
+          <div class="col temp text-center">5°C | <strong>2°C</strong></div>
+        </div>
+        <br />
+        <div class="row saturday day">
+          <div class="col-4">
+            Saturday
+          </div>
+          <div class="col">
+            <span class="fas fa-cloud-showers-heavy forecast-icon text-center"></span>
+          </div>
+          <div class="col temp text-center">7°C | <strong>5°C</strong></div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+      <span class="footer"> Coded by <a href="https://aneta.cestuje.com">Aneta Stepankova </a></span>
+    </footer>
+    <script src="script.js"></script>
+    </div>
+  </body>
+</html>

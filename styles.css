@@ -1,0 +1,122 @@
+hr {
+  width: 50%;
+  color: #31326f;
+  margin-left: 0;
+}
+body {
+  background-image: url(Clouds.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+input {
+  display: block;
+  position: relative;
+  margin-left: -40px;
+}
+.date {
+  color: #656566;
+  text-align: left;
+  position: relative;
+}
+.heading {
+  text-align: center;
+  font-family: "Newsreader", serif;
+  color: #31326f;
+  font-size: 60px;
+}
+.container {
+  margin-top: 20px;
+  padding-top: 30px;
+  border-radius: 20px;
+  padding: 40px 40px;
+  border: 1px solid #31326f;
+  box-shadow: rgba(37, 39, 89, 0.15) 0 5px 10px 0;
+  max-width: 700px;
+}
+.body {
+  padding: 0px 0px;
+  background-color: #dff3e9a6;
+}
+.card-body {
+  margin: 20px;
+  padding-bottom: 20px;
+}
+.background {
+  margin: 0 auto;
+}
+.prague {
+  background-color: rgba(248, 249, 250, 0.6);
+  display: block;
+  margin: 0 auto;
+  border: 0.5px solid #31326f;
+  border-radius: 10px;
+}
+.inner-card {
+  font-family: "Newsreader", serif;
+  color: #31326f;
+  font-size: 50px;
+  text-align: center;
+}
+.farenheit {
+  font-size: 50px;
+  font-family: "Newsreader", serif;
+  transition: all 200ms ease-in-out;
+  color: #000;
+}
+.farenheit:hover {
+  color: #31326f;
+}
+.feels-like {
+  text-align: left;
+  padding-top: 120px;
+}
+.icon {
+  font-size: 90px;
+  color: #31326f;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.weather-details {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+  font-size: 20px;
+}
+.footer {
+  text-align: center;
+  display: block;
+  font-family: monospace;
+  color: #bbe6e6;
+  font-size: 15px;
+}
+a {
+  color: #a1cae2;
+}
+a:hover {
+  color: #f8a1d1;
+  text-decoration: none;
+}
+a:visited {
+  color: #f8a1d1;
+}
+.day {
+  font-size: 25px;
+}
+.forecast-icon {
+  font-size: 30px;
+  color: #31326f;
+  text-align: center;
+}
+.unit {
+  color: #31326f;
+  text-decoration: underline;
+  font-size: 20px;
+  position: relative;
+}
+.unit:visited {
+  color: #31326f;
+}
+.unit:hover {
+  font-size: 30px;
+  color: #000;
+}
