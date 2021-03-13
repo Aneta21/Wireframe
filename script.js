@@ -37,8 +37,8 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(handlePosition);
 }
 
-let location = document.querySelector("#location");
-location.addEventListener("click", getCurrentLocation);
+let current = document.querySelector("#location");
+current.addEventListener("click", getCurrentLocation);
 
 // Show typed city and temp
 function showTemperature(response) {
